@@ -1,6 +1,7 @@
 // In order to work with state,
-// we need the state hook from React
+// we need React and the state hook from React
 import React from 'react'
+
 
 function Family() {
   // Family is the top-level component so it does not receive props
@@ -8,6 +9,7 @@ function Family() {
   // Family needs to render a Parent
   return null
 }
+
 
 function Parent(props) {
   // Parent expects some information passed through props
@@ -17,9 +19,8 @@ function Parent(props) {
   return null
 }
 
+
 function Child(props) {
   // A Child expects some props (name, etc)
   return null
 }
-
-export default Family
