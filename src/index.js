@@ -16,21 +16,7 @@
 
 
 /*
-💥💥💥 TASK 1B- Examples of a `Greet` component being INVOKED 💥💥💥
-
-  - Components are "invoked" so they return elements
-  - Instead of invoking with parens, we invoke with < />
-  - Instead of passing args with parens, we pass them with attribute-like syntax
-  - Don't forget all tags need to close correctly
-
-  <Greet person='Ian' emphasis />              // props is object with { person: 'Ian', emphasis: true }
-  <Greet person='Michael' emphasis={false} />  // props is object with { person: 'Michael', emphasis: false }
-  <Greet person='Sarah' />                     // props is object with { person: 'Sarah' }
-*/
-
-
-/*
-💥💥💥 TASK 1C- Example of a React component `Greet` being DECLARED 💥💥💥
+💥💥💥 TASK 1B- Example of a React component `Greet` being DECLARED 💥💥💥
 
   - Name is capitalized
   - Takes an object ("props") as its one argument
@@ -46,6 +32,23 @@
 function Greet() { // takes data => returns elements
 
 }
+
+
+/*
+💥💥💥 TASK 1C- Examples of a `Greet` component being INVOKED 💥💥💥
+
+  - Components are "invoked" so they return elements
+  - Instead of invoking with parens, we invoke with < />
+  - Instead of passing args with parens, we pass them with attribute-like syntax
+  - Don't forget all tags need to close correctly
+
+  <Greet person='Ian' emphasis />              // props is object with { person: 'Ian', emphasis: true }
+  <Greet person='Michael' emphasis={false} />  // props is object with { person: 'Michael', emphasis: false }
+  <Greet person='Sarah' />                     // props is object with { person: 'Sarah' }
+*/
+
+
+
 // render the Greet to div#greet passing the correct props
 
 
