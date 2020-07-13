@@ -13,6 +13,7 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
+    "@ladrillo/lightbulb": "0.0.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
