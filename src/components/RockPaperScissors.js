@@ -12,7 +12,7 @@ export default function RockPaperScissors(props) {
   // 1- 👉👉👉 CREATE SLICES OF APPLICATION STATE (USING TOP-LEVEL COMPONENT STATE)
 
   // We need several slices of component state, to keep track of the general state of the app:
-  //   - the number of rounds played, initialize at number 1
+  //   - the `round` number about to be played, initialize at 1
   //   - the number of 'wins', initialize at number 0
   //   - the number of 'losses', initialize at number 0
   //   - the 'message' displayed on the screen, initialize at string 'Fight!'
