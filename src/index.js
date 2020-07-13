@@ -4,7 +4,6 @@
 
 // 👉 Importing a React component from another file
 // RockPaperScissors
-// FamilyTree
 
 
 /*
@@ -20,14 +19,12 @@
 
   - Name is capitalized
   - Takes an object ("props") as its one argument
-  - We often destructure the individual props
   - Must return SOMETHING (null, empty string, elements...)
-  - React provides some built-in components (h1, div, etc)
+  - React provides some built-in components that return HTML elements (h1, div, span...)
   - Attribute names with dashes are camelCased (except data- & aria-)
   - The `class` attribute is `className`, `for` attribute is `htmlFor`
-  - We can INTERPOLATE 🔥 expressions 🔥 using curly braces
-  - We can interpolate attribute values, and content
-  - We can validate the props
+  - We can INTERPOLATE 🔥 js expressions 🔥 using curly braces
+  - We interpolate attribute values and content
 */
 function Greet() { // takes data => returns elements
 
@@ -48,15 +45,6 @@ function Greet() { // takes data => returns elements
 */
 
 
-
-// render the Greet to div#greet passing the correct props
-
-
-// 💥💥💥 TASK 2: render the FamilyTree to div#familyTree
-// FamilyTree expects no props
-// Work on the FamilyTree component
-
-
-// 💥💥💥 TASK 3: render the RockPaperScissors to div#rockPaperScissors
+// 💥💥💥 TASK 2: render the RockPaperScissors to div#rockPaperScissors
 // RockPaperScissors expects a 'player' prop
 // Work on the RockPaperScissors component

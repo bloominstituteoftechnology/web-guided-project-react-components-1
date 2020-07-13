@@ -8,7 +8,7 @@ const weapons = ['🗿', '📜', '✂️']
 const [rock, paper, scissors] = weapons
 
 
-export default function RockPaperScissors({ player }) {
+export default function RockPaperScissors(props) {
   // 1- 👉👉👉 CREATE SLICES OF APPLICATION STATE (USING TOP-LEVEL COMPONENT STATE)
 
   // We need several slices of state, to keep track of:
@@ -18,7 +18,7 @@ export default function RockPaperScissors({ player }) {
   //   - the 'message' displayed on the screen, start at 'Fight!'
 
   // 2- 👉👉👉 We DO NOT need a slice for rounds tied, as we can calculate that info using other slices
-  // 3- 👉👉👉 REPLACE DOWN IN THE JSX THE HARD CODED PIECES OF DATA WITH PIECES OF STATE
+  // 3- 👉👉👉 REPLACE DOWN IN THE JSX THE HARD CODED PIECES OF DATA WITH PIECES OF STATE OR PROPS
   // 4- 👉👉👉 ATTACH IN THE JSX A CLICK HANDLER THAT UPDATES STATE ON USER INTERACTION
 
 
