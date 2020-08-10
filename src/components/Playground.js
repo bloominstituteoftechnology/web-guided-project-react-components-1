@@ -1,12 +1,10 @@
 /*
-💥💥💥 Rules of React components and JSX 💥💥💥
-
-  - Name is capitalized
-  - Takes an object ("props") as its one argument
-  - Must return SOMETHING (null, empty string, elements...)
-  - React provides some built-in components that return HTML elements (h1, div, span...)
-  - Attribute names with dashes are camelCased (except data- & aria-)
-  - The `class` attribute is `className`, `for` attribute is `htmlFor`
-  - We can INTERPOLATE 🔥 js expressions 🔥 using curly braces
-  - We interpolate attribute values and content
+💥💥💥 Rules of STATE 💥💥💥
+  - We create a slice of like this: `const [healthPoints, setHealthPoints] = useState(100)`
+  - A component may have as may slices of state as it needs
+  - An slice of state may contain a string, a number, a boolean, an array, an object...
+  - We use slices of state to store information that changes as the user interacts with the app
+  - State is used in the JSX interpolated inside curly brackets
+  - We never tamper with state: `healthPoints++`, `healthPoints--` or `someState.push(item)` is FORBIDDEN
+  - We use the dedicated "state updater" to schedule a state change: `setHealthPoints(healthPoints + 1)`
 */
