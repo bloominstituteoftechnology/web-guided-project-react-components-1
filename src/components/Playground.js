@@ -1,6 +1,6 @@
 /*
 💥💥💥 Rules of STATE 💥💥💥
-  - We create a slice of like this: `const [healthPoints, setHealthPoints] = useState(100)`
+  - We create a slice of state like this: `const [healthPoints, setHealthPoints] = useState(100)`
   - A component may have as may slices of state as it needs
   - An slice of state may contain a string, a number, a boolean, an array, an object...
   - We use slices of state to store information that changes as the user interacts with the app
