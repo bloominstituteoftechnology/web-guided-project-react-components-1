@@ -24,12 +24,12 @@ import { render } from 'react-dom'
 function App(props) {
   return (
     <div className='container'>
-      <h1>Welcome to React, {props.name}</h1>
+      <h1>Welcome to React, Web {props.cohort}</h1>
     </div>
   )
 }
 
 render(
-  <App name='Andre' />,
+  <App cohort='36' />,
   document.querySelector('#root')
 )
