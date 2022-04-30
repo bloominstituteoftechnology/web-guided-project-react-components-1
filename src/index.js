@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import Playground from './components/Playground'
+import Lightbulb from './components/Lightbulb'
 
 /*
 💥💥💥 Rules when DECLARING a React component 💥💥💥
@@ -29,6 +30,7 @@ function App(props) {
       <h1>Welcome to React, {track} rockstars!!</h1>
       <p>A {props.instructor} learned section of React for students from {track} {props.cohort}</p>
       <Playground cohort={props.cohort} track={track} />
+      <Lightbulb />
     </div>
   )
 }
