@@ -76,12 +76,12 @@ function Playground(props) {
       <h2>PLAYGROUND!!!!</h2>
       <p>Your instructor is: {props.instructor}</p>
       <p>My current mood is: {blah}</p>
-      <p>{error}</p>
+      { error && <p>{error}</p> }
       <h3>The current count is: {count}</h3>
       <button onClick={increment}>Incremement</button>
       <button onClick={decrement}>Decrement</button>
       <button onClick={() => setSpinner(true)}>Toggle Spinner</button>
-      <h2>{winner}</h2>
+      {winner && <h2>{winner}</h2> }
       <h3>The current weapon is: {weapon}</h3>
       <button onClick={() => weaponChoice("Scissors")}>Pick Scissors</button>
       <button onClick={() => weaponChoice("Rock")}>Pick Rock</button>
@@ -92,5 +92,6 @@ function Playground(props) {
 
 export default Playground;
 
-// what are props?...data passed from parent to child
-// what is state?....data that lives in the component itself
+// What is JSX?????? JavaScript Markup language
+// What are props??? data passed from parent component to child component
+// What is state???? data that lives in the component itself 
