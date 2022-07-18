@@ -1,6 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
 
+import Playground from "./components/Playground";
+
 /*
 💥💥💥 Rules when DECLARING a React component 💥💥💥
   - Name is capitalized
@@ -22,14 +24,46 @@ import { render } from 'react-dom'
 */
 
 function App(props) {
+  console.log(props);
   return (
-    <div className='container'>
-      <h1>Welcome to React, {props.track} rockstars!!</h1>
+    <div className='container'> 
+      {/**
+       * const divElem = document.createElement("div");
+       * divElem.classList.add("container");
+       */}
+      <h1>Welcome to React, {props.track}: {props.cohort} rockstars!!</h1>
+      <h2>Today's day is...{props.day}</h2>
+      <p>Your instructor is: {props.instructor}</p>
+      <p>I am {props.happy ? "happy!" : "sad!"} today</p>
+      <img src="blah.com" />
+      <input type="text" value="OH NOES" />
     </div>
   )
 }
 
+/**
+ * if (props.happy) {
+ *   return "happy"
+ * } else {
+ *   return "sad"
+ * }
+ */
+
+// props = data passed from a parent to a child
+// props are...??? key value pairs OBJECT!
+
 render(
-  <App track='Web' />,
+  <App track="Web" cohort="59" instructor="Casey" happy={false} day="Monday" blah="foo" />,
   document.querySelector('#root')
 )
+/**
+ * const props = {
+ *  track: "Web",
+ *  cohort: "59",
+ *  instructor: "Casey",
+ *  happy: false,
+ *  day: "Monday",
+ *  addNum: function() {}
+ * }
+ */
+// App(props)

@@ -8,3 +8,16 @@
   - We never tamper with state: `healthPoints++`, `healthPoints--` or `someState.push(item)` is FORBIDDEN
   - We use the dedicated "state updater" to schedule a state change: `setHealthPoints(healthPoints + 1)`
 */
+
+import React from "react";
+
+function Playground(props) {
+  return (
+    <h2>PLAYGROUND!!!!</h2>
+  )
+}
+
+export default Playground;
+
+// props are...? data passed from a parent to a child
+// props are???? object!
