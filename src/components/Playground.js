@@ -18,6 +18,8 @@ function Playground(props) {
   const [blah, setBlah] = useState(100);
   const [count, setCount] = useState(0);
   const [error, setError] = useState("");
+  const [spinner, setSpinner] = useState(false);
+  const [weapon, setWeapon] = useState("Scissors");
 
   // count = count + 1;
 
@@ -37,6 +39,15 @@ function Playground(props) {
     }
   }
 
+  if (spinner) {
+    return (
+      <div className="container">
+        <p>The spinner is ON data coming soon I proooooomise!!</p>
+        <button onClick={() => setSpinner(false)}>Toggle Spinner</button>
+      </div>
+    )
+  }
+
   return (
     <div className="container">
       <h2>PLAYGROUND!!!!</h2>
@@ -46,13 +57,12 @@ function Playground(props) {
       <h3>The current count is: {count}</h3>
       <button onClick={increment}>Incremement</button>
       <button onClick={decrement}>Decrement</button>
+      <button onClick={() => setSpinner(true)}>Toggle Spinner</button>
     </div>
   )
 }
 
 export default Playground;
 
-// How many things can you return from a JS function...? ONE THING!
-
-// props are...? data passed from a parent to a child
-// props are???? object!
+// what are props?...data passed from parent to child
+// what is state?....data that lives in the component itself
