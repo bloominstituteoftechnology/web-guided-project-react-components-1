@@ -33,9 +33,8 @@ function App(props) {
        */}
       <h1>Welcome to React, {props.track}: {props.cohort} rockstars!!</h1>
       <h2>Today's day is...{props.day}</h2>
-      <p>Your instructor is: {props.instructor}</p>
       <p>I am {props.happy ? "happy!" : "sad!"} today</p>
-      <Playground />
+      <Playground instructor={props.instructor} />
     </div>
   )
 }

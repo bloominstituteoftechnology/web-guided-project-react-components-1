@@ -9,15 +9,50 @@
   - We use the dedicated "state updater" to schedule a state change: `setHealthPoints(healthPoints + 1)`
 */
 
-import React from "react";
+// function declaration.....hoisted!
+// function expression......NOT hoisted!
+
+import React, { useState } from "react";
 
 function Playground(props) {
+  const [blah, setBlah] = useState(100);
+  const [count, setCount] = useState(0);
+  const [error, setError] = useState("");
+
+  // count = count + 1;
+
+  const increment = () => {
+    if (count < 10) {
+      setCount(count + 1);
+    } else {
+      setError("Count must be less than or equal to 10 ya jerk!");
+    }
+  }
+
+  const decrement = () => {
+    if (count > 0) {
+      setCount(count - 1);
+    } else {
+      setError("Count must be greater than or equal to 0 ya chump!");
+    }
+  }
+
   return (
-    <h2>PLAYGROUND!!!!</h2>
+    <div className="container">
+      <h2>PLAYGROUND!!!!</h2>
+      <p>Your instructor is: {props.instructor}</p>
+      <p>My current mood is: {blah}</p>
+      <p>{error}</p>
+      <h3>The current count is: {count}</h3>
+      <button onClick={increment}>Incremement</button>
+      <button onClick={decrement}>Decrement</button>
+    </div>
   )
 }
 
 export default Playground;
+
+// How many things can you return from a JS function...? ONE THING!
 
 // props are...? data passed from a parent to a child
 // props are???? object!
