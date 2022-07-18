@@ -35,35 +35,12 @@ function App(props) {
       <h2>Today's day is...{props.day}</h2>
       <p>Your instructor is: {props.instructor}</p>
       <p>I am {props.happy ? "happy!" : "sad!"} today</p>
-      <img src="blah.com" />
-      <input type="text" value="OH NOES" />
+      <Playground />
     </div>
   )
 }
-
-/**
- * if (props.happy) {
- *   return "happy"
- * } else {
- *   return "sad"
- * }
- */
-
-// props = data passed from a parent to a child
-// props are...??? key value pairs OBJECT!
 
 render(
   <App track="Web" cohort="59" instructor="Casey" happy={false} day="Monday" blah="foo" />,
   document.querySelector('#root')
 )
-/**
- * const props = {
- *  track: "Web",
- *  cohort: "59",
- *  instructor: "Casey",
- *  happy: false,
- *  day: "Monday",
- *  addNum: function() {}
- * }
- */
-// App(props)
